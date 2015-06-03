@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# This is the provisioning script which is executed with the virtual machine is first created.
-# Here is were we install all of the dependencies for our project.
+# This is the provisioning script which is executed when the virtual machine is first created.
+# Here is where we install all of the dependencies for our project.
 
-# Switch to shared folder immediately upon login.
+# Configure the machine to switch us to the shared folder immediately upon login.
 printf 'cd /vagrant' >> /home/vagrant/.bash
 
 # Rake is a dependency for projects built with Ceedling.
 apt-get -y install rake
 
-# Some other tools we might want to use during the build.
+# Some other tools we might want to use in the future.
 # apt-get -y install doxygen
 # apt-get -y install splint
 # apt-get -y install pandoc
