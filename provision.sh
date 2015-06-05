@@ -4,7 +4,7 @@
 # Here is where we install all of the dependencies for our project.
 
 # Configure the machine to switch us to the shared folder immediately upon login.
-printf 'cd /vagrant' >> /home/vagrant/.bash
+printf 'cd /vagrant' >> /home/vagrant/.bashrc
 
 # Rake is a dependency for projects built with Ceedling.
 apt-get -y install rake
